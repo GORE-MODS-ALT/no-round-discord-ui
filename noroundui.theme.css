@@ -1,0 +1,77 @@
+/**
+ * @name No Roundness
+ * @author GORE
+ * @description Completely removes all rounded corners from Discord
+ * @version 1.0.0
+ */
+
+*,
+*::before,
+*::after {
+    border-radius: 0px !important;
+}
+
+:root {
+    --radius-xs: 0px !important;
+    --radius-sm: 0px !important;
+    --radius-md: 0px !important;
+    --radius-lg: 0px !important;
+    --radius-xl: 0px !important;
+
+    --roundness-xs: 0px !important;
+    --roundness-sm: 0px !important;
+    --roundness-md: 0px !important;
+    --roundness-lg: 0px !important;
+    --roundness-xl: 0px !important;
+}
+
+/* Remove masks (this is why icons stay round sometimes) */
+svg,
+foreignObject {
+    mask: none !important;
+    -webkit-mask: none !important;
+}
+
+/* Server icons */
+.wrapper-1_HaEi,
+.wrapper-1_HaEi * {
+    border-radius: 0px !important;
+    mask: none !important;
+}
+
+/* Avatars (these are heavily masked by Discord) */
+.avatar-1BDn8e,
+.avatar-2e8lTP,
+.avatarDecoration-34OC0G,
+.avatarStack-3BjmsZ * {
+    border-radius: 0px !important;
+    mask: none !important;
+    clip-path: none !important;
+}
+
+/* Buttons, inputs, popouts */
+button,
+input,
+textarea,
+.menu-1QACrS,
+.layer-86YKbF,
+.container-1NXEtd,
+.card-3bjQvP {
+    border-radius: 0px !important;
+}
+
+/* Fix pill-shaped selected server indicator */
+.item-2LIpTv {
+    border-radius: 0px !important;
+}
+
+/* Scrollbars (optional but fits theme) */
+::-webkit-scrollbar-thumb {
+    border-radius: 0px !important;
+}
+
+/* Embeds and code blocks */
+.embedFull-1HGV2S,
+.markup-eYLPri code {
+    border-radius: 0px !important;
+}
