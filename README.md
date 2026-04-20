@@ -5,7 +5,7 @@
 A simple Discord theme that removes the rounded corners from Discord's UI, giving it a sharper, more square/flat look.
 
 ## Features
-- Removes rounded corners on almost all UI elements
+- Removes rounded corners on all UI elements
 - Cleaner, more angular appearance
 - Lightweight and minimal
 
